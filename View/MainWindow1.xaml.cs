@@ -95,5 +95,11 @@ namespace Sanator.View
             WorkerView d = new WorkerView(new WorkerViewModel(new DbOperations(), new DefaultDialogService()));
             d.Show();
         }
+
+        private void ConnectBD(object sender, RoutedEventArgs e)
+        {
+            ConnectBD d = new ConnectBD();
+            d.Show();
+        }
     }
 }

@@ -25,6 +25,7 @@
             <ImageBrush ImageSource="C:\Users\user\Desktop\SanatorKurs222-master\Images\hostel.jpg"/>
         </Grid.Background>
         <Button x:Name="Ficha1" Content="" Width="43" Height="6" Click="Ficha"  HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"  BorderBrush="Transparent"  Background="Transparent" RenderTransformOrigin="-0.107,1.426"/>
+        <Button x:Name="TestBD" Content="TestBD" Width="76" Height="29" Click="ConnectBD"  HorizontalAlignment="Left" Margin="117,11,0,0" VerticalAlignment="Top"  BorderBrush="LightBlue"  Background="LightBlue" RenderTransformOrigin="-0.107,1.426" Grid.Column="1"/>
         <Button x:Name="Ficha12" Content="" Width="43" Height="8" Click="Ficha2"  HorizontalAlignment="Left" Margin="10,29,0,0" VerticalAlignment="Top"  BorderBrush="Transparent"  Background="Transparent" RenderTransformOrigin="-0.107,1.426"/>
         <Button Click="OpenClientView" Content="Клиенты" HorizontalAlignment="Left" Margin="34,95,0,0" VerticalAlignment="Top" Width="202" Height="41" BorderBrush="#FF040944" Background="#D870B4DB" Grid.Row="1"/>
         <Button Click="OpenWorkerView" Content="Сотрудники" HorizontalAlignment="Left" Margin="30,95,0,0" VerticalAlignment="Top" Width="202" Height="41" BorderBrush="#FF040944" Background="#D870B4DB" Grid.Row="1" Grid.Column="1"/>
