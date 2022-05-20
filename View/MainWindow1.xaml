@@ -1,0 +1,66 @@
+﻿<Window x:Class="Sanator.View.MainWindow1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Sanator.View"
+        mc:Ignorable="d"
+         Title="Санаторий" Height="384.065" Width="552.216" WindowStartupLocation="CenterScreen">
+    <Window.Resources>
+        <Style x:Key="{x:Type Button}">
+            <Setter Property="Control.FontSize" Value="18"></Setter>
+            <Setter Property="Control.Background" Value="#FF70B4DB"></Setter>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="143*"/>
+            <ColumnDefinition Width="129*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="177*"/>
+            <RowDefinition Height="182*"/>
+        </Grid.RowDefinitions>
+        <Grid.Background>
+            <ImageBrush ImageSource="C:\Users\user\Desktop\SanatorKurs222-master\Images\hostel.jpg"/>
+        </Grid.Background>
+        <Button x:Name="Ficha1" Content="" Width="43" Height="6" Click="Ficha"  HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"  BorderBrush="Transparent"  Background="Transparent" RenderTransformOrigin="-0.107,1.426"/>
+        <Button x:Name="Ficha12" Content="" Width="43" Height="8" Click="Ficha2"  HorizontalAlignment="Left" Margin="10,29,0,0" VerticalAlignment="Top"  BorderBrush="Transparent"  Background="Transparent" RenderTransformOrigin="-0.107,1.426"/>
+        <Button Click="OpenClientView" Content="Клиенты" HorizontalAlignment="Left" Margin="34,95,0,0" VerticalAlignment="Top" Width="202" Height="41" BorderBrush="#FF040944" Background="#D870B4DB" Grid.Row="1"/>
+        <Button Click="OpenWorkerView" Content="Сотрудники" HorizontalAlignment="Left" Margin="30,95,0,0" VerticalAlignment="Top" Width="202" Height="41" BorderBrush="#FF040944" Background="#D870B4DB" Grid.Row="1" Grid.Column="1"/>
+        <Button Click="OpenReserveView" Content="Забронировать номер" HorizontalAlignment="Left" Margin="34,146,0,0" VerticalAlignment="Top"  Width="202" RenderTransformOrigin="0.111,1.646" Height="41" BorderBrush="#FF000342" Background="#D870B4DB" Grid.RowSpan="2"/>
+        <Button Click="OpenUchetView" Content="Проживание" HorizontalAlignment="Left" Margin="34,82,0,0" VerticalAlignment="Top" Width="202" Height="41" Background="#D870B4DB" Foreground="Black" BorderBrush="#FF040944"/>
+        <Button Click="OpenServiceView" Content="Услуги" HorizontalAlignment="Left" Margin="30.178,29,0,0" VerticalAlignment="Top" Width="202" Height="41" BorderBrush="#FF040944" Background="#D870B4DB" Grid.Row="1" Grid.Column="1"/>
+        <Button Click="OpenLogView" Content="Оказать услугу" HorizontalAlignment="Left" Margin="34,29,0,0" VerticalAlignment="Top" Width="202" Height="41" RenderTransformOrigin="-0.029,7.263" Background="#D870B4DB" BorderBrush="#FF040944" Grid.Row="1"/>
+        <Button Click="OpenPasswordView" Margin="198.178,10,0,0" Height="49" Width="50" VerticalAlignment="Top" HorizontalAlignment="Left" Background="#FF3387EC" RenderTransformOrigin="-7.72,2.224" Grid.Column="1">
+            <Button.Template>
+                <ControlTemplate>
+                    <Grid>
+                        <Ellipse x:Name="ell" StrokeThickness="2" Stroke="Black" Fill="#FF368CF3">
+                        </Ellipse>
+                        <Image  RenderTransformOrigin="0.321,0.5" Width="39" Margin="6,-9,5,10"  />
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="true">
+                            <Setter Property="FontWeight" Value="Bold" />
+                            <Setter TargetName="ell" Property="Stroke" Value="#FF2A80F9" />
+                            <Setter TargetName="ell" Property="Fill" Value="#FFA7CBFF" />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button Click="OpenNumbersView" Content="Номера" HorizontalAlignment="Left" Margin="30.178,82,0,0" VerticalAlignment="Top" Width="202" BorderBrush="#FF040944" Height="41" Background="#D870B4DB" Grid.Column="1"/>
+        <Label Content="Санаторий" HorizontalAlignment="Left" Margin="218,10,0,0" VerticalAlignment="Top" Width="143" FontFamily="Wide Latin" FontSize="24" FontWeight="Bold" Height="35" Grid.ColumnSpan="2">
+            <Label.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFD2D5EC"/>
+                    <GradientStop Color="#FF368CF3"/>
+                </LinearGradientBrush>
+            </Label.Foreground>
+        </Label>
+        <Frame x:Name="MyFrame" NavigationUIVisibility="Visible" Margin="0,-28,0,28" Grid.ColumnSpan="2" RenderTransformOrigin="0.518,0.495"/>
+        <Button Click="OpenPayView" Content="Оплата" HorizontalAlignment="Left" Margin="30.178,146,0,0" VerticalAlignment="Top" Width="202" BorderBrush="#FF040944" Height="41" Background="#D870B4DB" Grid.RowSpan="2" Grid.Column="1"/>
+    </Grid>
+</Window>
+

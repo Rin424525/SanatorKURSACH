@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31624.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sanator", "Sanator.csproj", "{EBF01EDF-4EB6-4C31-B182-410A57230D9C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EBF01EDF-4EB6-4C31-B182-410A57230D9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBF01EDF-4EB6-4C31-B182-410A57230D9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBF01EDF-4EB6-4C31-B182-410A57230D9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBF01EDF-4EB6-4C31-B182-410A57230D9C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5DD6A29C-8EA2-49BB-9919-3095FF383B0E}
+	EndGlobalSection
+EndGlobal
