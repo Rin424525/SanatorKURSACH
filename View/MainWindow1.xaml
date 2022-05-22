@@ -22,7 +22,7 @@
             <RowDefinition Height="182*"/>
         </Grid.RowDefinitions>
         <Grid.Background>
-            <ImageBrush ImageSource="C:\Users\user\Desktop\SanatorKurs222-master\Images\hostel.jpg"/>
+            <ImageBrush ImageSource="C:\Users\rinsa\Source\Repos\SanatorKURSACH\Images\hostel.jpg"/>
         </Grid.Background>
         <Button x:Name="Ficha1" Content="" Width="43" Height="6" Click="Ficha"  HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"  BorderBrush="Transparent"  Background="Transparent" RenderTransformOrigin="-0.107,1.426"/>
         <Button x:Name="TestBD" Content="TestBD" Width="76" Height="29" Click="ConnectBD"  HorizontalAlignment="Left" Margin="117,11,0,0" VerticalAlignment="Top"  BorderBrush="LightBlue"  Background="LightBlue" RenderTransformOrigin="-0.107,1.426" Grid.Column="1"/>
@@ -37,9 +37,18 @@
             <Button.Template>
                 <ControlTemplate>
                     <Grid>
-                        <Ellipse x:Name="ell" StrokeThickness="2" Stroke="Black" Fill="#FF368CF3">
+                        <Ellipse x:Name="ell" StrokeThickness="2" Stroke="Transparent" Fill="Transparent">
                         </Ellipse>
-                        <Image  RenderTransformOrigin="0.321,0.5" Width="39" Margin="6,-9,5,10"  />
+                        <Image  RenderTransformOrigin="0.321,0.5" Width="Auto" Margin="-14,-12,-13,-7" Source="C:\Users\rinsa\Source\Repos\SanatorKURSACH\Images\close.jpg" >
+                            <Image.RenderTransform>
+                                <TransformGroup>
+                                    <ScaleTransform/>
+                                    <SkewTransform/>
+                                    <RotateTransform Angle="-0.079"/>
+                                    <TranslateTransform/>
+                                </TransformGroup>
+                            </Image.RenderTransform>
+                        </Image>
                     </Grid>
                     <ControlTemplate.Triggers>
                         <Trigger Property="IsMouseOver" Value="true">
@@ -60,7 +69,6 @@
                 </LinearGradientBrush>
             </Label.Foreground>
         </Label>
-        <Frame x:Name="MyFrame" NavigationUIVisibility="Visible" Margin="0,-28,0,28" Grid.ColumnSpan="2" RenderTransformOrigin="0.518,0.495"/>
         <Button Click="OpenPayView" Content="Оплата" HorizontalAlignment="Left" Margin="30.178,146,0,0" VerticalAlignment="Top" Width="202" BorderBrush="#FF040944" Height="41" Background="#D870B4DB" Grid.RowSpan="2" Grid.Column="1"/>
     </Grid>
 </Window>

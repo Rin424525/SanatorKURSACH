@@ -347,5 +347,8 @@
     <Resource Include="Images\супер_эконом.jpg" />
     <Resource Include="Images\эконом.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\close.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

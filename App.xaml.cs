@@ -17,7 +17,7 @@ namespace Sanator
         protected override void OnStartup(StartupEventArgs e)
         {
             base.OnStartup(e);
-            new Password().Show();
+            new MainWindow1().Show();
         }
     }
 }

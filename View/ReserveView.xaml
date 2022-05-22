@@ -99,11 +99,7 @@
             <DatePicker SelectedDate="{Binding date_finish}"/>
         </StackPanel>
 
-        <StackPanel HorizontalAlignment="Left" Height="51" Margin="1,186,0,0" VerticalAlignment="Top" Width="254" Grid.Column="1">
-            <TextBlock Foreground="White" Text="Администратор:" TextWrapping="Wrap" Height="23"/>
-            <TextBlock Foreground="White" Text="{Binding SelectedWorker.Fio}" IsEnabled="False" Height="23" FontWeight="Bold" />
-
-        </StackPanel>
+        <StackPanel HorizontalAlignment="Left" Height="51" Margin="1,186,0,0" VerticalAlignment="Top" Width="254" Grid.Column="1"/>
         <Button Command="{Binding Reserve}" Content="Забронировать" HorizontalAlignment="Left" Margin="214,0,0,20" Width="189" Grid.ColumnSpan="2" Height="39" VerticalAlignment="Bottom" BorderBrush="#FF000078" FontWeight="Bold"/>
         <TextBlock Text="{Binding text}" HorizontalAlignment="Center" Margin="108,0,78,73" Foreground="#FFFD0000" FontSize="14" RenderTransformOrigin="0.5,0.5" Width="429" Grid.ColumnSpan="2" TextAlignment="Center" Height="20" VerticalAlignment="Bottom"/>
         <TextBlock HorizontalAlignment="Left" Margin="10,242,0,0" TextWrapping="Wrap" Text="Стоимость проживания:" VerticalAlignment="Top" FontWeight="Bold"/>

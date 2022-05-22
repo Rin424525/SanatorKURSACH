@@ -195,7 +195,6 @@
                 IsSynchronizedWithCurrentItem="True"                     
                 DisplayMemberPath="ID"
                 SelectedValuePath="ID" Height="23"/>
-        <TextBlock HorizontalAlignment="Left" Margin="381,248,0,0" TextWrapping="Wrap" Text="Администратор:" VerticalAlignment="Top" Width="99" Foreground="White" Height="23"/>
         <TextBlock Foreground="White" Text="{Binding SelectedUchet.Worker1.Fio}" HorizontalAlignment="Left" Margin="485,248,0,0" VerticalAlignment="Top" Width="259" Grid.ColumnSpan="2" Height="23"/>
     </Grid>
 </Window>
